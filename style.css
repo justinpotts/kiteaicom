@@ -117,3 +117,14 @@ button {
   margin-top:50px;
   margin-bottom:25px;
 }
+
+.text-section {
+  margin-top:100px;
+  margin-bottom:100px;
+}
+
+.section-header {
+  font-size:24px;
+  color:#0B0C0E;
+  font-weight:400;
+}
