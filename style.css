@@ -1,0 +1,119 @@
+body {
+  padding-top: 5rem;
+}
+
+h1 {
+  font-weight:bolder;
+  font-size:36px;
+  color:#0B0C0E;
+}
+
+h2 {
+  margin-top:25px;
+  font-weight:lighter;
+  font-size:18px;
+  color:#545454;
+  line-height:1.75;
+  margin-bottom:25px;
+}
+
+.bg-white {
+  background-color:white;
+  border-bottom:1px solid #EEEEEE;
+}
+
+.nav-item {
+  margin-left:10px;
+  margin-right:10px;
+}
+
+.nav-link {
+  color:#A3A3A3 !important;
+  font-weight:600;
+  font-size:14px;
+}
+
+.nav-link:hover {
+  color:#545454 !important;
+}
+
+.cta-input {
+  height:50px;
+  width:60%;
+  border-radius:5px;
+  border: 1px solid #E8E8E8;
+  padding:10px 10px 10px 10px;
+}
+
+.cta-input::placeholder {
+  color:#B9B9B9;
+}
+
+.cta-input:focus {
+  border-color:#4A90E2;
+}
+
+.btn-primary {
+  background-color:#4A90E2;
+  height:50px;
+  border:none;
+  font-size:12px;
+  min-width:150px;
+}
+
+.section {
+  margin-top:250px;
+  margin-bottom:250px;
+}
+
+.blob-content {
+  width:90%;
+  padding-top:100px;
+}
+
+.blob {
+  width:50%;
+  min-height:400px;
+  background-image: url('img/blob.png');
+  background-repeat: no-repeat;
+  background-size:100% 100%;
+}
+
+.center-section {
+  width:40%;
+}
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
+button {
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #F6F9FF;
+  padding-top:50px;
+  padding-bottom:10px;
+  margin-bottom:0px;
+  color:#545454;
+}
+
+.footer-links {
+  list-style: none;
+  padding-left:0px;
+  padding-top:10px;
+}
+
+.footer-links>li>a {
+  color:#545454;
+}
+
+.footer-brand {
+  margin-top:50px;
+  margin-bottom:25px;
+}
