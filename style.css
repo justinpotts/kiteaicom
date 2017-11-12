@@ -4,17 +4,47 @@ body {
 
 h1 {
   font-weight:bolder;
-  font-size:36px;
+  font-size:2.250em;
   color:#0B0C0E;
 }
 
 h2 {
   margin-top:25px;
   font-weight:lighter;
-  font-size:18px;
+  font-size:1.125em;
   color:#545454;
   line-height:1.75;
   margin-bottom:25px;
+}
+
+h3 {
+  font-size:1.500em;
+  font-weight:600;
+  letter-spacing:.5px;
+  color:#0B0C0E;
+}
+
+h4 {
+  font-size:1.125em;
+  font-weight:600;
+  letter-spacing:.5px;
+  color:#0B0C0E;
+}
+
+.muted {
+  color:#C0C0C0;
+}
+
+.header {
+  font-weight:bolder;
+  font-size:3.000em;
+  color:#0B0C0E;
+}
+
+.subheader {
+  font-weight:bold;
+  font-size:2.250em;
+  color:#0B0C0E;
 }
 
 .bg-white {
@@ -27,10 +57,16 @@ h2 {
   margin-right:10px;
 }
 
+.nav-item.active > a {
+  color:#545454 !important;
+}
+
 .nav-link {
-  color:#A3A3A3 !important;
-  font-weight:600;
-  font-size:14px;
+  padding-top:20px;
+  padding-bottom:20px;
+  color:#AAAAAA !important;
+  font-weight:200;
+  font-size:1.000em;
 }
 
 .nav-link:hover {
@@ -58,11 +94,13 @@ h2 {
   height:50px;
   border:none;
   font-size:12px;
+  color:white;
   min-width:150px;
+  border-radius:5px !important;
 }
 
 .section {
-  margin-top:250px;
+  margin-top:100px;
   margin-bottom:250px;
 }
 
@@ -83,12 +121,17 @@ h2 {
   width:40%;
 }
 
-.vertical-center {
-  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-  min-height: 100vh; /* These two lines are counted as one :-)       */
+.vertical-align {
+  display: flex;
+  flex-direction: row;
+}
 
+.vertical-align > [class^="col-"],
+.vertical-align > [class*=" col-"] {
   display: flex;
   align-items: center;
+  justify-content: center; /* Optional, to align inner items
+                              horizontally inside the column */
 }
 
 button {
@@ -96,21 +139,34 @@ button {
 }
 
 .footer {
-  background-color: #F6F9FF;
-  padding-top:50px;
-  padding-bottom:10px;
+  background-color: white;
+  padding-top:75px;
+  padding-bottom:75px;
   margin-bottom:0px;
   color:#545454;
+  border-top:1px solid #EEEEEE;
 }
 
 .footer-links {
   list-style: none;
   padding-left:0px;
   padding-top:10px;
+  font-size:1.000em;
+}
+
+.footer-links>li {
+  margin-top:5px;
+  margin-bottom:5px;
 }
 
 .footer-links>li>a {
-  color:#545454;
+  color:#585858;
+  letter-spacing:.82px;
+}
+
+.footer-links>li>a:hover {
+  color:#1F1F1F;
+  text-decoration:none;
 }
 
 .footer-brand {
@@ -124,7 +180,18 @@ button {
 }
 
 .section-header {
-  font-size:24px;
+  font-size:1.500em;
   color:#0B0C0E;
   font-weight:400;
+}
+
+.footer-header {
+  font-weight:600;
+  letter-spacing: 1.3px;
+  color:#A8A8A8;
+}
+
+.feature-section {
+  margin-top:50px;
+  margin-bottom:100px;
 }
