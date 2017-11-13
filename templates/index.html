@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% block header %}Home{% endblock %}
+{% block body %}
+<div class="container" style="margin-top:7.813em; margin-bottom:100px;">
+  <div class="row">
+    <div class="col-md-6" style="text-align:left">
+      <img src="{{ url_for('static', filename='img/couple-illustration.png') }}" width="90%">
+    </div>
+    <div class="col-md-6">
+      <div class="landing-header">
+        <h1 style="font-size:48px;">Finally, a solution to online harassment.</h1>
+      </div>
+      <div class="landing-subtext">
+        <h2>Whether it's moderating conversations, auto-reporting abusive content and users, or making your platform enjoyable to use, Kite AI's API makes it simple to detect abuse in your app.</h2>
+      </div>
+      <div class="landing-action">
+        <form action="http://formspree.io/hello@kiteai.com" method="POST">
+          <div class="input-group">
+            <input name="email" class="cta-input" type=text placeholder="Enter your email">
+            <span class="input-group-btn" style="padding-left:5px;">
+              <button class="btn btn-large btn-primary" type="submit">SCHEDULE A DEMO</button>
+            </span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

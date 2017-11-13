@@ -1,0 +1,77 @@
+{% extends "layout.html" %}
+{% block header %}Why{% endblock %}
+{% block body %}
+<div class="container" style="margin-top:75px;">
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8" style="text-align:center">
+      <h1 class="header">Building solutions to make the web a safer place.</h1>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6" style="text-align:center">
+      <h2>Kite AI ensures your platform stays free of abuse. With high accuracy and low latency, results are instant and accurate.</h2>
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+</div>
+
+<div class="container" style="margin-top:50px;">
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6" style="text-align:center">
+      <img src="{{ url_for('static', filename='img/red-illustration.png') }}" width=90%>
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+</div>
+
+<div class="container" style="margin-top:50px;">
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+      <div class="feature-section">
+        <h1 class="subheader">Encourage conversation</h1>
+        <h2>One in four individuals online feel the need to sensor themselves out of fear of being harassed. We believe the web should be a place for people to contribute ideas and engage in discussion. Use Kite AI to ensure harassment never takes this voice away.</h2>
+      </div>
+      <div class="feature-section">
+        <h1 class="subheader">Improve user engagement</h1>
+        <h2>25% of people who've experienced harassment disconnect their online presence, whether it's for a few hours or deleting their account entirely. Kite AI will help deter abuse, and keep users on your platform.</h2>
+      </div>
+      <div class="feature-section">
+        <h1 class="subheader">Make a difference</h1>
+        <h2>Every year, almost half a million high school students attempt suicide due to cyberbullying. We may not be able to reach all half a million, but we can make a difference, and you can too. There's no reason why any individual should suffer an experience so awful online it makes them want to take their life. Be the leader in change online, and set the precedent for how other apps and companies approach this issue.</h2>
+      </div>
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+      <center>
+        <h1>Want to work with us?</h1>
+        <h1>Let's chat.</h1>
+      </center>
+      <div class="landing-action" style="margin-top:30px; width:100%;">
+        <form action="http://formspree.io/hello@kiteai.com" method="POST">
+          <div class="input-group">
+            <input name="email" class="cta-input" type=text placeholder="Enter your email" style="width:100%;">
+            <span class="input-group-btn" style="padding-left:5px;">
+              <button class="btn btn-large btn-primary" type="submit">SCHEDULE A DEMO</button>
+            </span>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+</div>
+{% endblock %}
