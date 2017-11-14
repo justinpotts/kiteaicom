@@ -1,6 +1,8 @@
 from flask import Flask, render_template, url_for
+from flask_sslify import SSLify
 
 app = Flask(__name__)
+sslify = SSLify(app)
 
 @app.route('/')
 def index():

@@ -1,5 +1,6 @@
 click==6.7
 Flask==0.12.2
+Flask-SSLify==0.1.5
 gevent==1.2.2
 greenlet==0.4.12
 gunicorn==19.7.1
