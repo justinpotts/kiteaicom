@@ -17,7 +17,6 @@ mail = Mail(app)
 
 def email(request):
     return_url = request.form['return']
-    print return_url
     contact = request.form['email']
 
     msg = Message('SALES', sender='hello@kiteai.com', recipients=['hello@kiteai.com'])
